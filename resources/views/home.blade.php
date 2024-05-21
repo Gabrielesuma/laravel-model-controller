@@ -3,14 +3,21 @@
 @section('title', 'Home')
 
 @section('content')
-<main>
-    <h1>Home page</h1>
-    <ul>
+<main class="container">
+    <div class="row">
         @foreach ($movies as $movie)
-            <li>{{$movie->title}}</li>
+            <div class="col-12 col-md-6 col-lg-2 mb-4">
+                <div class="card">
+                    <img src="{{$movie->image}}" class="card-img-top" alt="Movie">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$movie->title}}</h5>
+                    </div>
+                </div>
+            </div>
+
         @endforeach
-    </ul>
-    
+    </div>
+
 </main>
 
 @endsection

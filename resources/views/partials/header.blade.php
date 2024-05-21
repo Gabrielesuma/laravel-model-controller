@@ -1,1 +1,3 @@
-<div>Header <i class="fa-solid fa-home"></i></div>
+<header class="text-center">
+    <h1>Movies</h1>
+</header>
